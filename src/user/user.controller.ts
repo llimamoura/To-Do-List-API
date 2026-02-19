@@ -9,10 +9,10 @@ import {
   HttpCode,
   HttpStatus,
 } from '@nestjs/common';
-import { UserService } from './user.service.js';
-import { CreateUserDto } from './dto/register-user.dto.js';
-import { UpdateUserDto } from './dto/update-user.dto.js';
-import { Public } from '../shared/decorators/is-public.decorator.js';
+import { UserService } from './user.service';
+import { CreateUserDto } from './dto/register-user.dto';
+import { UpdateUserDto } from './dto/update-user.dto';
+import { Public } from '../shared/decorators/is-public.decorator';
 
 @Controller('user')
 export class UserController {

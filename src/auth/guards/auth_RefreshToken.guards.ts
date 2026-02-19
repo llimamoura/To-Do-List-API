@@ -6,7 +6,7 @@ import {
 } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
 import { Request } from 'express';
-import { jwtRefreshConstants } from '../constants.js';
+import { jwtRefreshConstants } from '../constants';
 
 type JwtPayload = {
   sub: string;

@@ -7,10 +7,10 @@ import {
   Param,
   Delete,
 } from '@nestjs/common';
-import { TaskService } from './task.service.js';
-import { CreateTaskDto } from './dto/create-task.dto.js';
-import { UpdateTaskDto } from './dto/update-task.dto.js';
-import { CurrentUser } from '../shared/decorators/currentUser.decorator.js';
+import { TaskService } from './task.service';
+import { CreateTaskDto } from './dto/create-task.dto';
+import { UpdateTaskDto } from './dto/update-task.dto';
+import { CurrentUser } from '../shared/decorators/currentUser.decorator';
 
 @Controller('task')
 export class TaskController {

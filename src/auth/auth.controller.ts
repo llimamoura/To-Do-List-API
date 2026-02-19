@@ -1,9 +1,9 @@
 import { Controller, Post, Body, UseGuards, Req } from '@nestjs/common';
-import { AuthService } from './auth.service.js';
-import { LoginAuthDto } from './dto/login-auth.dto.js';
-import { Public } from '../shared/decorators/is-public.decorator.js';
-import { RefreshTokenGuard } from './guards/auth_RefreshToken.guards.js';
-import * as requestTypes from '../shared/types/request.types.js';
+import { AuthService } from './auth.service';
+import { LoginAuthDto } from './dto/login-auth.dto';
+import { Public } from '../shared/decorators/is-public.decorator';
+import { RefreshTokenGuard } from './guards/auth_RefreshToken.guards';
+import * as requestTypes from '../shared/types/request.types';
 
 @Controller('auth')
 export class AuthController {

@@ -3,12 +3,12 @@ import {
   Injectable,
   UnauthorizedException,
 } from '@nestjs/common';
-import { UserService } from '../user/user.service.js';
+import { UserService } from '../user/user.service';
 import * as bcrypt from 'bcrypt';
-import { LoginAuthDto } from './dto/login-auth.dto.js';
+import { LoginAuthDto } from './dto/login-auth.dto';
 import { JwtService } from '@nestjs/jwt';
-import { PrismaService } from '../shared/prisma/prisma.service.js';
-import { jwtAccessConstants, jwtRefreshConstants } from './constants.js';
+import { PrismaService } from '../shared/prisma/prisma.service';
+import { jwtAccessConstants, jwtRefreshConstants } from './constants';
 
 @Injectable()
 export class AuthService {
